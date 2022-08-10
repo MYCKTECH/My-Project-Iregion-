@@ -1,0 +1,95 @@
+@use "../colors" as *;
+@use "../font" as *;
+
+div>svg{
+width: 25px;
+height: 30px;
+color: $secColor;
+}
+
+footer {
+    overflow-x: hidden;
+}
+.mobilefooterNavlink a{
+    @include mobilefooterNavlink;
+}
+
+.footerText {
+    @include paragraphTxt;
+    line-height: 24px;
+    // letter-spacing: 0.08em;
+    color: $TetColor;
+}
+
+.mainFooter {
+    background: rgba(130, 27, 125, 0.8);
+}
+
+.founderTxt {    
+    @include paragraphTxt;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    color: $TetColor;
+    
+}
+
+.footerNametxt { 
+    @include paragraphTxt;  
+    font-size: 21px;
+    letter-spacing: 0.08em;
+    color: $TetColor;
+    line-height: 1.5em;
+}
+.footerLink {
+    @include  mobilefooterNavlink;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.08em;
+    color: $TetColor;
+    font-weight: 400;
+}
+
+.footerLink:hover {
+    color: skyblue;
+}
+
+.FbTw-icon {
+color: #000000 !important;
+width: 30px;
+height: 30px;
+}
+.FbTw-icon:hover {
+    color: #043BFF !important;
+} 
+.IG-icon {
+    color: #000000 !important;
+    width: 30px;
+    height: 30px;
+}
+.IG-icon:hover {
+    color: red !important;
+}
+.mapAddress {
+    @include paragraphTxt;
+    color: $TetColor; 
+}
+
+
+.footerMapMobile {
+   margin-top: 50px ;
+   overflow-x: hidden;
+}
+.iconMobile {
+    margin-top:30px;
+}
+
+.MobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footMap{
+    display: none;
+   
+}

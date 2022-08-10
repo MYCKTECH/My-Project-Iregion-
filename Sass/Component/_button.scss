@@ -1,0 +1,23 @@
+@use "../colors" as *;
+
+@mixin HoverButtonAnimat {
+        background: $navHovercolor;
+        color: #fff !important;
+        border-radius: 10px;
+        animation: navBarr 1s ease-in 1;
+
+        @keyframes navBarr {
+            0% {
+            transform: scale(1, 1);
+            }
+            50% {
+            transform: scale(1.1, 1.1);
+            }
+            100% {
+            transform: scale(1, 1);
+            }
+        }
+} 
+
+
+

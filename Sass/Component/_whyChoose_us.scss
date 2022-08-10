@@ -1,0 +1,17 @@
+@use "../font" as *;
+
+.whyChooseUs {
+    margin-top: 8em !important;
+}
+
+.whyChooseUs-Img{
+    max-width: 70%;
+    min-height: 300px;
+    border-radius: 0px;
+
+}
+
+.whyChooseUs p{
+    @include paragraphTxt;
+    margin-top: 1.5em;
+}

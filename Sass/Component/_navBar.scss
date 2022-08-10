@@ -1,0 +1,62 @@
+@use "../colors"  as *;
+@use "./logo" as *;
+@use "./button" as *;
+
+
+
+nav {
+    .main-logo {
+        @include Logo;
+    }
+    .sign-in {
+        color:#fff !important;
+    background-color: $secColor;
+    border-radius: 20px;
+    text-align: center; 
+    padding-left: 15px !important;
+    padding-right: 15px !important;  
+}
+
+.navBarr {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bolder !important;
+    font-size: 16px;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.08em;
+    color: $secColor;
+}
+
+.navBarr:hover {
+    @include HoverButtonAnimat;
+    text-align: center;
+}
+
+.toggIcon {
+    border-color: grey;
+    
+   background-color:$navHovercolor;
+   border-color: $secColor;
+   border-width: 2px;
+}
+
+.toggButt {
+   background-color:$navHovercolor;
+   border-color: $secColor;
+   border-width: 2px;
+}
+}
+
+.sign-in {
+    border-style: none;
+}
+
+// font {
+//     font-family: Montserrat;
+// font-size: 16px;
+// font-weight: 600;
+// line-height: 30px;
+// letter-spacing: 0.08em;
+// text-align: left;
+
+// }

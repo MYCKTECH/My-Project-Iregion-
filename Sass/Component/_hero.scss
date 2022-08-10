@@ -1,0 +1,31 @@
+@use "../colors" as *;
+@use "./button" as *;
+@use "../font" as *;
+
+.Hero {
+    margin-top: 3em !important;
+
+.heroText {
+    font-variant: small-caps;
+
+}
+
+.heroImages {
+    width: 40%;
+    left: 730px;
+    top: 0px;
+    border-radius: 0px;
+}
+}
+.heroBtn{
+    border-radius: 10px;
+    background-color: $secColor;
+    border-style: none;
+}
+.heroBtn:hover {
+    @include HoverButtonAnimat;
+}
+
+.leftHero {
+    padding-top:5rem;
+}
